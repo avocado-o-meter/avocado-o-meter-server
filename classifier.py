@@ -2,8 +2,8 @@ from fastai.learner import load_learner, Path
 import os
 
 class Classifier:
-    def __init__(self) -> None:
-        fruit = os.path.join('.', 'fruit-v1.pkl')
+    def __init__(self, base_dir) -> None:
+        fruit = os.path.join(base_dir, 'fruit-v1.pkl')
         self.__fruit = load_learner(fruit)
         self.__avocado = load_learner(fruit)
 
