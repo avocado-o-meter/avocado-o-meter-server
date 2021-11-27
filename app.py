@@ -11,7 +11,7 @@ BASE_DIR = os.path.join(PARENT_DIR, 'app')
 if os.path.exists(os.path.join(BASE_DIR, 'fruit-v1.pkl')) == False:
     urllib.request.urlretrieve('https://elasticbeanstalk-us-east-2-838649319005.s3.us-east-2.amazonaws.com/fruit-v1.pkl', 'fruit-v1.pkl')
 
-UPLOAD_FOLDER = './uploads'
+UPLOAD_FOLDER = 'uploads'
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
