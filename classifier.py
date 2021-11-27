@@ -1,10 +1,11 @@
 from fastai.learner import load_learner, Path
-import urllib.request
+import os
+
 class Classifier:
     def __init__(self) -> None:
-        urllib.request.urlretrieve('https://drive.google.com/uc?export=download&id=1qYuNCaQoZDuDCX_llHgriQn2qWE62KyA', 'fruit-v1.pkl')
-        self.__fruit = load_learner(Path('.'), 'fruit-v1.pkl')
-        self.__avocado = load_learner(Path('.'), 'fruit-v1.pkl')
+        fruit = os.path.join('.', 'fruit-v1.pkl')
+        self.__fruit = load_learner(fruit)
+        self.__avocado = load_learner(fruit)
 
     def __get_model(self, model):
         if model == 'fruit':
