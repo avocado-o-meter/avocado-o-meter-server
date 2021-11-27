@@ -1,5 +1,5 @@
-https://download.pytorch.org/whl/cpu/torch-1.10.0-cp39-cp39-manylinux1_x86_64.whl
-https://download.pytorch.org/whl/cpu/torchvision-0.11.1-cp39-cp39-manylinux1_x86_64.whl
+https://files.pythonhosted.org/packages/eb/59/ada45144bea5fb8b6abaff2195237721beae20a0f129722f493d91403469/torch-1.10.0-cp39-cp39-manylinux1_x86_64.whl
+https://files.pythonhosted.org/packages/0e/e4/847aa282d07827b6a7cf8d06ac41d740101b7ee59ab96c5bdb03ff2fe0ad/torchvision-0.11.1-cp39-cp39-manylinux1_x86_64.whl
 Flask==2.0.2
 gunicorn==20.1.0
 fastai==2.5.3
