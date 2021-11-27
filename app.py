@@ -18,7 +18,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/')
 def index():
-    return "Server up and running"
+    return f'Server up and running {FILE_DIR} {PARENT_DIR} {BASE_DIR}'
 
 @app.route('/predict/<model>', methods=['POST'])
 def predict(model=None):
