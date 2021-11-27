@@ -2,13 +2,13 @@ from flask import Flask, request, jsonify
 import uuid
 from classifier import Classifier
 
-application = Flask(__name__)
+app = Flask(__name__)
 
-@application.route('/')
+@app.route('/')
 def index():
     return "Server up and running"
 
-@application.route('/predict/<model>', methods=['POST'])
+@app.route('/predict/<model>', methods=['POST'])
 def predict(model=None):
     if request.method == 'POST':
         file = request.files['upload']
